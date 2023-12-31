@@ -27,7 +27,7 @@ export const AutoComplete = () => {
         );
     };
 
-    const debouncedFetch = useDebounce(fetchCities, 500);
+    const debouncedFetch = useDebounce(fetchCities, 800);
 
     const handleOptionSelection = (selectedOption: City | null) => {
         if (selectedOption) {
