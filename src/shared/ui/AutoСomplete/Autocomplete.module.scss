@@ -1,0 +1,70 @@
+.AutoComplete {
+    position: relative;
+}
+
+.AutoCompleteInput {
+    position: relative;
+    min-width: 375px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+
+    input {
+        border: none;
+        outline: none;
+        padding: 8px 30px 8px 8px;
+
+    }
+
+    button {
+        position: absolute;
+        cursor: pointer;
+        line-height: 0;
+        right: 0;
+        background: none;
+        border: none;
+    }
+
+}
+
+.AutoCompleteOptions {
+    position: absolute;
+    width: 100%;
+    margin-top: 8px;
+    max-height: 300px;
+    overflow: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);;
+    padding: 4px 0;
+}
+
+.AutoCompleteNotFound {
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.AutoCompleteOption {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 16px 8px 40px;
+
+    .Selected {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 15%;
+        left: 0;
+        padding-left: 10px;
+
+        svg {
+            stroke: #008000FF;
+        }
+    }
+}
+
+.AutoCompleteOptionActive {
+    color: #fff;
+    background-color: #4daaff;
+}
