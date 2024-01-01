@@ -6,12 +6,22 @@
     align-items: center;
     text-align: center;
 
+    @media screen and (max-width: 450px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .Title {
         flex-basis: 100%;
         text-align: center;
         flex-grow: 0;
         margin-bottom: 16px;
         font-size: 22px;
+
+        @media screen and (max-width: 450px) {
+            margin: 0;
+        }
+
     }
 
     .RealFeel,

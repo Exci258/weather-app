@@ -6,6 +6,10 @@
     align-items: center;
     text-align: center;
 
+    @media screen and (max-width: 450px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .Title {
         flex-basis: 100%;
@@ -29,5 +33,9 @@
 
     .Image {
         flex-basis: 33.3333%;
+
+        @media screen and (max-width: 450px) {
+            display: none;
+        }
     }
 }
