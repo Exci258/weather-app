@@ -7,7 +7,7 @@ export const fetchCityByName = createAsyncThunk(
         try {
             const response = await cityApi.get('/cities', {
                 params: {
-                    minPopulation: 35000,
+                    minPopulation: 30000,
                     languageCode: 'ru',
                     namePrefix: cityName,
                 },
